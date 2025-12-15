@@ -76,6 +76,10 @@ textarea {
 }
  */
 /* // UTILITY CLASSES */
+.active {
+  color: var(--link-active);
+}
+
 .offscreen {
   position: absolute;
   left: -10000px;
@@ -173,6 +177,7 @@ a:active {
   padding: var(--padding-tb) var(--padding-side);
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: sticky;
   top: 0;
   z-index: 1;

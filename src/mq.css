@@ -1,0 +1,21 @@
+@media screen and (min-width: 756px) {
+  .header {
+    border: 1px solid red;
+  }
+
+  .header__nav {
+    background-color: transparent;
+    color: var(--font-color);
+    width: max-content;
+    display: flex;    
+    position: static;
+  }
+
+  .header__ul {
+    flex-direction: row;
+  }
+
+  .header__btn {
+    display: none;
+  }
+}

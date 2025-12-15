@@ -23,7 +23,7 @@ export const Header = () => {
 
   return (
     <header className='header'>
-      <h1 className='title'>Vortex Security</h1>
+      <h1 className='title nowrap'>Vortex Security</h1>
       <nav className="header__nav hide">
         <ul className='header__ul none'>
           {pages.map((page) => {
