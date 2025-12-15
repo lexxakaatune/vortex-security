@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto&display=swap');
+
+/* // RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+/* // VARIABLES */
+:root {
+  /* FONTS */
+  --ff: "Roboto", sans-serif;
+  --ff-headings: "Roboto Condensed", sans-serif;
+  --fs: clamp(1rem, 2.2vh, 1.5rem);
+
+  /* COLORS */
+  --bgcolor:  #0B033C;
+  --body-bgcolor: #fff;
+  --border-color: #fff;
+  --font-color: #000;
+  --reverse-font-color: #fff;
+  --header-bgcolor: #fff;
+  --hero-bgcolor: #0B033C;
+  --highlight-color: #fff;
+  --link-active: #BF4611;
+  --link-color: #000;
+  --link-hover: hsla(0, 0%, 0%, 0.6);
+  --nav-bgcolor: #0B033C;
+  --btn-bgcolor: #BF4611;
+
+  /* // BORDERS */
+  --border: 1px solid var(--border-color);
+  --border-radius: 15px;
+  --btn-radius: 10px;
+
+  /* // STANDARD PADDING */
+  --padding-tb: 0.25em;
+  --padding-side: 2.5%;
+
+  /* // STANDARD MARGIN */
+  --margin: clamp(1em, 2.5vh, 1.5em) 0;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --BGCOLOR-FADE: gray;
+    --BGCOLOR: #000;
+    --BODY-BGCOLOR: #333;
+    --BORDER-COLOR: whitesmoke;
+    --FONT-COLOR: whitesmoke;
+    --HEADER-COLOR: whitesmoke;
+    --HERO-COLOR: #333;
+    --HIGHLIGHT-COLOR: red;
+    --LINK-ACTIVE: rgb(252, 100, 50);
+    --LINK-COLOR: whitesmoke;
+    --LINK-HOVER: red;
+    --NAV-BGCOLOR: rgb(20, 20, 20);
+    --BUTTON-BGCOLOR: #fff;
+    --BUTTON-COLOR: #333;
+  }
+}
+ */
+/* // UTILITY CLASSES */
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.center {
+  text-align: center;
+}
+
+.none {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/* BLOCKS */
+.btn {
+  border-radius: var(--btn-radius);
+  border: none;
+  background-color: var(--btn-bgcolor);
+  color: var(--reverse-font-color);
+  font-weight: bold;
+}
+
+/* // GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bgcolor);
+  font-size: 16px;
+  font-family: var(--ff);
+}
+
+body {
+  background-color: var(--body-bgcolor);
+  color: var(--font-color);
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: var(--ff-headings);
+  letter-spacing: 0.1em;
+}
+
+h2, h3 {
+  margin-bottom: 1em;
+}
+
+p {
+  line-height: 1.5;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0.25rem;
+}
+
+button:hover {
+  border:1px solid var(--btn-bgcolor);
+}
+
+a:any-link {
+  color: var(--link-color);
+}
+
+a:hover, a:focus-visible {
+  color: var(--link-hover);
+}
+
+a:active {
+  color: var(--link-active);
+}
+
+/* // HEADER */
+.header {
+  background-color: var(--header-bgcolor);
+  color: var(--font-color);
+  padding: var(--padding-tb) var(--padding-side);
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.title {
+  font-size: clamp(1.5rem, 2.2vh, 2rem);
+}
+
+.header__nav {
+  background-color: var(--nav-bgcolor);
+  color: var(--reverse-font-color);
+  box-shadow: 0 6px 5px -5px var(--border-color);
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.header__ul {
+  padding: var(--padding-tb) var(--padding-side);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 1rem;
+}
+
+.header__ul a {
+  color: inherit;
+}
+
+/* // MAIN */
+.main {
+  flex-grow: 1;
+}
+
+/* // FOOTER */
+.footer {
+  background-color: var(--bgcolor);
+  color: var(--reverse-font-color);
+  font-size: clamp(0.5em, 1.5vh, 1em);
+  padding: var(--padding-tb) var(--padding-side);
+}
