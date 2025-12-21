@@ -1,8 +1,10 @@
-@media screen and (min-width: 756px) {
-  .header {
-    border: 1px solid red;
+@media screen and (min-width: 800px) {
+  /* Utilities classes*/
+  .flex {
+    flex-direction: row;
   }
 
+  /* header section */
   .header__nav {
     background-color: transparent;
     color: var(--font-color);
@@ -17,5 +19,97 @@
 
   .header__btn {
     display: none;
+  }
+
+  /* //HERO SECTION */
+  .hero {
+    display: flex;
+  }
+
+  .hero__figure {
+    min-width: 50%;
+  }
+
+  /* ABOUT US SECTION */
+  .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+  }
+
+  .about__figure, 
+  .about__aside {
+    max-width: 50%;
+  }
+
+  /* // WHY SECTION */
+  .why {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+  }
+  
+  .why__div,
+  .why__fieldset {
+    font-size: 0.7em;
+    width: clamp(200px, 32%, 400px);
+    height: 150px;
+  }
+
+  .why__div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Service section */
+ 
+  .service__div {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service__div p{
+    max-width: 50%;
+  }
+
+  .service__figure {
+    width: 32%;
+  }
+
+  /* //TRUST SECTION */
+  .trust__ul li {
+    max-width: 120px;
+  }
+
+  /* // CONTACT SECTION */
+  .contact {
+    height: 60vh;
+    display: flex;
+  }
+
+  .contact__div,
+  .contact__figure {
+    min-width: 50%;
+  }
+
+  .contact__form {
+    top: auto;
+    right: -20%;
+  }
+      
+  /* // ABOUT PAGE */
+  .card__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
   }
 }

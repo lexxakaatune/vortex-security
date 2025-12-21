@@ -1,14 +1,21 @@
 /* // HERO */
 .hero {
-  position: relative;
+  border: 1px solid red;
+  background-color: var(--hero-bgcolor);
+  color: var(--reverse-font-color);
+  padding: 0.25rem;
 }
 
-.hero__h2 {
-  background-color: var(--HERO-BGCOLOR);
-  color: var(--HERO-COLOR);
-  text-shadow: 2px 2px 5px var(--BORDER-COLOR);
+.hero__div {
+  padding: 1rem;
+}
+
+.hero__span {
+  border-radius: 1rem;
+  background-color: var(--fade-bgcolor);
+  text-shadow: 2px 2px 5px var(--link-active);
   letter-spacing: 0.1rem;
-  padding: 0.25em 0.5em;
+  padding: 0.5rem;
   position: absolute;
   top: -100px;
   left: 20px;
@@ -22,12 +29,230 @@
   }
 
   80% {
-    top: 30px;
+    top: 60px;
     transform: skew(10deg, -5deg) scaleY(1.2);
   }
 
   100% {
-    top: 20px;
+    top: 50px;
     transform: skew(-10deg, -5deg) scaleY(1);
   }
 }
+
+.hero__div h2 {
+  margin-top: 2rem;
+}
+
+.hero__div button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.hero__figcaption {
+  border: 1px ridge var(--reverse-font-color);
+  padding: 0.5rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.hero__figcaption button {
+  border: 1px ridge var(--link-active);
+}
+
+/* //STATS */
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* // ABOUT SECTION */
+.about {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.about__figure {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-end;
+  position: relative;
+}
+
+.about__figcaption {
+  border-radius: 50%;
+  background-color: orange;
+  outline-offset: -9px;
+  outline: 2px dashed #000;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 60px;
+  left: 180px;
+}
+
+.about__figure img:first-child {
+  border-top-left-radius: 150px;
+  border-top-right-radius: 150px;
+  width: clamp(100px, 80vw, 250px);
+  margin-right: 0.5rem;
+}
+
+.about__figure img:last-child {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  width: 100px;
+  height: 100px;
+}
+
+.about__ul {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.about__li {
+  flex-grow: 1;
+  margin-right: 0.25rem;
+}
+
+.about__li:nth-child(2), 
+.about__li:nth-child(3) {
+  border-left:  3px dashed #333;
+  padding-left: 0.5rem;
+}
+
+.about__li strong {
+  font-size: 3rem;
+  display: block;
+}
+
+/* Why SECTION */
+.why {
+  background-color: var(--bgcolor);
+  color: var(--reverse-font-color);
+  min-height:50vh;
+  padding: 1rem;
+}
+
+.why__fieldset {
+  padding: 0.5rem;
+}
+
+/* SERVICE SECTION */
+.service {
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.service__div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.service__figure {
+  background-color: #eee;
+  width: clamp(200px, 90vw, 300px);
+  margin: 2rem auto;
+  position: relative;
+}
+
+.service__figcaption {
+  border-left: 5px solid var(--bgcolor);
+  background-color: var(--reverse-font-color);
+  padding: 0.5rem;
+  position: absolute;
+  top: 80%;
+  right: 0.5rem;
+  left: 0.5rem;
+}
+
+/* TRUST SECTION */
+.trust {
+  background-color: var(--bgcolor);
+  color: var(--reverse-font-color);
+  padding: 1rem;
+}
+
+.trust__ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trust__ul li {
+  text-align: center;
+  width: 32%;
+}
+
+/* CONTACT SECTION */
+.contact {
+  padding: 1rem;
+}
+
+.contact__figure {
+  min-height: 50vh;
+}
+
+.contact__div {
+  min-height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.contact__form {
+  border-radius: 10px;
+  background-color: var(--body-bgcolor);
+  box-shadow: 0px 0px 5px var(--shadow-color);
+  max-width: 400px;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  position: absolute;
+  top: 20%;
+}
+
+.contact__p {
+  max-width: 45%;
+}
+
+.contact__p:nth-child(5) {
+  min-width: 100%;
+}
+
+.contact label {
+  font-weight: bold;
+}
+
+.contact__form input {
+  text-transform: capitalize;
+}
+
+.contact__form input,
+.contact__form textarea {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px var(--shadow-color);
+  width: 100%;
+  padding: 0.25rem;
+}
+
+.contact__figure {
+  background-color: var(--bgcolor);
+  background-image: url(../public/img/about.jpg) ;
+  background-size: cover;
+  background-position: center;
+}
+
