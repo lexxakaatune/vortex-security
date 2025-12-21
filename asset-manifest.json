@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/vortex-security/static/css/main.a1fcbe6f.css",
+    "main.js": "/vortex-security/static/js/main.f1a00ffd.js",
+    "static/media/about.jpg": "/vortex-security/static/media/about.2fb26adb865af8d8c284.jpg",
+    "index.html": "/vortex-security/index.html",
+    "main.a1fcbe6f.css.map": "/vortex-security/static/css/main.a1fcbe6f.css.map",
+    "main.f1a00ffd.js.map": "/vortex-security/static/js/main.f1a00ffd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a1fcbe6f.css",
+    "static/js/main.f1a00ffd.js"
+  ]
+}
