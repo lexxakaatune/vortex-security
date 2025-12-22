@@ -4,13 +4,13 @@ const About = () => {
     <>
       <section class="about about__hero">
         <figure class="about__figure">
-          <img src="img/servicesherobg.100x750.jpg" alt="picture" />
+          <img src="/img/servicesherobg.100x750.jpg" alt="picture" />
           <figcaption class="about__figcaption">
             <span class="nowrap"><b>25</b></span>
             <small class="nowrap">years of</small>
             <small class="nowrap">experience</small> 
           </figcaption>
-          <img src="img/servicesherobg.100x750.jpg" alt="picture" />
+          <img src="/img/servicesherobg.100x750.jpg" alt="picture" />
         </figure>
         <aside class="about__aside">
           <h2 class="h2">ABOUT US</h2>
@@ -43,22 +43,22 @@ const About = () => {
           <figure class="about__card">
             <figcaption class="bold">Safety first</figcaption>
             <figcaption>InvestXpress is a safety first organisation</figcaption>
-            <img src="img/SafetyFirst_XL__654x628.png" alt="safety first" width="654" height="628" title="your safety with us is our priority"  loading="lazy"/>
+            <img src="/img/SafetyFirst_XL__654x628.png" alt="safety first" width="654" height="628" title="your safety with us is our priority"  loading="lazy"/>
           </figure>
           <figure class="about__card">
             <figcaption class="bold">Participation is power</figcaption>
             <figcaption>At InvestXpress the rich don't get a better deal</figcaption>
-            <img src="img/Participation_XL__988x1053.png" alt="Participation is power" width="988" height="1053" title="working together not just to earn but to create"  loading="lazy"/>
+            <img src="/img/Participation_XL__988x1053.png" alt="Participation is power" width="988" height="1053" title="working together not just to earn but to create"  loading="lazy"/>
           </figure>
           <figure class="about__card">
             <figcaption class="bold">Radial clients focus</figcaption>
             <figcaption>We exist to make our clients happy</figcaption>
-            <img src="img/RadicalCustomer_XL__988x1100.png" alt="Radical clients" width="988" height="1100" title="if you are happy then we are happy" loading="lazy"/>
+            <img src="/img/RadicalCustomer_XL__988x1100.png" alt="Radical clients" width="988" height="1100" title="if you are happy then we are happy" loading="lazy"/>
           </figure>
           <figure class="about__card">
             <figcaption class="bold">First-principles thinking</figcaption>
             <figcaption>we make bold bets and callenge the status quo</figcaption>
-            <img src="img/FirstPrinciples_XL__988x970.png" alt="First-principles thinking" width="988" height="970" title="bold yet best choices behind for the future" loading="lazy"/>
+            <img src="/img/FirstPrinciples_XL__988x970.png" alt="First-principles thinking" width="988" height="970" title="bold yet best choices behind for the future" loading="lazy"/>
           </figure>
         </section>
 
@@ -67,7 +67,7 @@ const About = () => {
 
           <section class="about about__section">
             <figure>
-              <img src="img/explore__.svg" alt="explore"/>
+              <img src="/img/explore__.svg" alt="explore"/>
             </figure>
             <aside class="about__aside">
               <h3>More for our investors to learn</h3>
@@ -80,12 +80,12 @@ const About = () => {
               <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <a href="#">Learn More</a></p> 
             </aside>
             <figure>
-                <img src="img/bear-bulls__.svg" alt="bear and bulls"/>
+                <img src="/img/bear-bulls__.svg" alt="bear and bulls"/>
             </figure>      
           </section>
           <section class="about about__section">
             <figure>
-                <img src="img/mecha__.svg" alt="macha"/>
+                <img src="/img/mecha__.svg" alt="macha"/>
             </figure>
             <aside class="about__aside">
               <h3>More for our investors to learn</h3>
@@ -98,7 +98,7 @@ const About = () => {
               <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <a>Learn More</a></p>
             </aside>
             <figure>
-              <img src="img/robo-hand__.svg" alt="robo hand"/>
+              <img src="/img/robo-hand__.svg" alt="robo hand"/>
             </figure>
           </section>
         </article>

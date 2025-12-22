@@ -2,20 +2,20 @@ import { useState } from "react";
 
 const Home = () => {
   const [image, setImage] = useState({
-      imageSrc: 'img/vortexhomepagebg.100x750.jpg',
+      imageSrc: '/img/vortexhomepagebg.100x750.jpg',
       imageAlt: 'Mr.Robert Davis photo',
       name: 'Mr.Robert Davis',
       work: 'Field Supervisor'
     });
   const images = [
     {
-      imageSrc: 'img/vortexhomepagebg.100x750.jpg',
+      imageSrc: '/img/vortexhomepagebg.100x750.jpg',
       imageAlt: 'Mr.Robert Davis photo',
       name: 'Mr.Robert Davis',
       work: 'Field Supervisor'
     },
     {
-      imageSrc: 'img/servicesherobg.100x750.jpg',
+      imageSrc: '/img/servicesherobg.100x750.jpg',
       imageAlt: 'another photo',
       name: 'Mr. another',
       work: 'another Supervisor'
@@ -53,13 +53,13 @@ const Home = () => {
       <main className="main">
         <section className="about">
           <figure className="about__figure">
-            <img src="img/servicesherobg.100x750.jpg" alt="picture" />
+            <img src="/img/servicesherobg.100x750.jpg" alt="picture" />
             <figcaption className="about__figcaption">
               <span className="nowrap"><b>25</b></span>
               <small className="nowrap">years of</small>
               <small className="nowrap">experience</small> 
             </figcaption>
-            <img src="img/servicesherobg.100x750.jpg" alt="picture" />
+            <img src="/img/servicesherobg.100x750.jpg" alt="picture" />
           </figure>
           <aside className="about__aside">
             <h2 className="h2">ABOUT US</h2>
@@ -128,42 +128,42 @@ const Home = () => {
 
           <div className="service__div">
             <figure className="service__figure">
-              <img src="img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="image alt" />
               <figcaption className="service__figcaption">
                 <h3>Personal Protection</h3>
                 <small>Ensure safety with our discreet personal protection, delivered by experts.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="image alt" />
               <figcaption className="service__figcaption">
                 <h3>Commercial Security</h3>
                 <small>Enhance business security with our comprehensive services.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="image alt" />
               <figcaption className="service__figcaption">
                 <h3>Object Protection</h3>
                 <small>Meticulous protection for your valuable assets.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="image alt" />
               <figcaption className="service__figcaption">
                 <h3>Security Consulting</h3>
                 <small>Consult with experts for strategic security guidance.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="image alt" />
               <figcaption className="service__figcaption">
                 <h3>Transport Security</h3>
                 <small>Secure transportation assets with efficient logistics.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="image alt" />
               <figcaption className="service__figcaption">
                 <h3>CCTV Monitoring</h3>
                 <small>Boost surveillance with <bold>CCTV</bold> for proactive security.</small>
