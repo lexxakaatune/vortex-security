@@ -1,6 +1,5 @@
 /* // HERO */
 .hero {
-  border: 1px solid red;
   background-color: var(--hero-bgcolor);
   color: var(--reverse-font-color);
   padding: 0.25rem;

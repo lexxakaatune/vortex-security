@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaShieldAlt, FaMicrochip, FaUserTie, FaHeadset, FaComments} from "react-icons/fa";
 
 const Home = () => {
   const [image, setImage] = useState({
@@ -93,27 +94,27 @@ const Home = () => {
             <p className="big-text">Choose Smart Security with us</p>
           </div>
           <fieldset className="why__fieldset">
-            <legend>icon</legend>
+            <legend><FaShieldAlt /></legend>
             <h3>Customized Security</h3>
             <p>We cudtomize security solutions to meet your unique needs be it event security, property protection, or ongoing surveillance</p>
           </fieldset>
           <fieldset className="why__fieldset">
-            <legend>icon</legend>
+            <legend><FaMicrochip /></legend>
             <h3>Cutting-Edge Technology</h3>
             <p>We integrate edge security technology, from advancedsurveillance systems to communication tools, enhancing the effectiveness of our services.</p>
           </fieldset>
           <fieldset className="why__fieldset">
-            <legend>icon</legend>
+            <legend><FaUserTie /></legend>
             <h3>Experienced Guards</h3>
             <p>We priortize excellence in training to ensure our securtiy personnel are well-equipped to handle diverse challenges with expertise and experience.</p>
           </fieldset>
           <fieldset className="why__fieldset">
-            <legend>icon</legend>
+            <legend><FaHeadset /></legend>
             <h3>24/7 Monitoring and Support</h3>
             <p>Security is not confined to a limit schedule, with our around o'clock monitoring and support your property is safeguarded at all times offering you peace of mind.</p>
           </fieldset>
           <fieldset className="why__fieldset">
-            <legend>icon</legend>
+            <legend><FaComments /></legend>
             <h3>Transparent Communication</h3>
             <p>Open and transparent communication is the foundation of our client relationships. We keep you inform about the status of your security a strong &amp; trust partnership.</p>
           </fieldset>
