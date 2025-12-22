@@ -3,14 +3,14 @@ import { FaShieldAlt, FaMicrochip, FaUserTie, FaHeadset, FaComments} from "react
 
 const Home = () => {
   const [image, setImage] = useState({
-      imageSrc: '/img/vortexhomepagebg.100x750.jpg',
+      imageSrc: '../public/img/vortexhomepagebg.100x750.jpg',
       imageAlt: 'Mr.Robert Davis photo',
       name: 'Mr.Robert Davis',
       work: 'Field Supervisor'
     });
   const images = [
     {
-      imageSrc: '/img/vortexhomepagebg.100x750.jpg',
+      imageSrc: './public/img/vortexhomepagebg.100x750.jpg',
       imageAlt: 'Mr.Robert Davis photo',
       name: 'Mr.Robert Davis',
       work: 'Field Supervisor'
