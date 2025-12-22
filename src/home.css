@@ -143,6 +143,10 @@
 .why__fieldset {
   padding: 0.5rem;
 }
+.why__fieldset legend {
+  font-size: 2rem;
+  padding: 0.25rem;
+}
 
 /* SERVICE SECTION */
 .service {

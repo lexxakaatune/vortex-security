@@ -3,14 +3,14 @@ import { FaShieldAlt, FaMicrochip, FaUserTie, FaHeadset, FaComments} from "react
 
 const Home = () => {
   const [image, setImage] = useState({
-      imageSrc: '../public/img/vortexhomepagebg.100x750.jpg',
+      imageSrc: '/img/vortexhomepagebg.100x750.jpg',
       imageAlt: 'Mr.Robert Davis photo',
       name: 'Mr.Robert Davis',
       work: 'Field Supervisor'
     });
   const images = [
     {
-      imageSrc: './public/img/vortexhomepagebg.100x750.jpg',
+      imageSrc: '/img/vortexhomepagebg.100x750.jpg',
       imageAlt: 'Mr.Robert Davis photo',
       name: 'Mr.Robert Davis',
       work: 'Field Supervisor'
@@ -54,13 +54,13 @@ const Home = () => {
       <main className="main">
         <section className="about">
           <figure className="about__figure">
-            <img src="/img/servicesherobg.100x750.jpg" alt="picture" />
+            <img src="../public/img/servicesherobg.100x750.jpg" alt="picture" />
             <figcaption className="about__figcaption">
               <span className="nowrap"><b>25</b></span>
               <small className="nowrap">years of</small>
               <small className="nowrap">experience</small> 
             </figcaption>
-            <img src="/img/servicesherobg.100x750.jpg" alt="picture" />
+            <img src="../public/img/servicesherobg.100x750.jpg" alt="picture" />
           </figure>
           <aside className="about__aside">
             <h2 className="h2">ABOUT US</h2>

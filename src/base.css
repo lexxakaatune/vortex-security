@@ -274,3 +274,11 @@ a:active {
 .footer__ul li h3 {
   font-size: clamp(0.9em, 2.8vw, 1.3rem);
 }
+
+/* Missing main */
+.Missing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
