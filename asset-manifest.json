@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/vortex-security/static/css/main.a1fcbe6f.css",
-    "main.js": "/vortex-security/static/js/main.f1a00ffd.js",
+    "main.css": "/vortex-security/static/css/main.e3a647eb.css",
+    "main.js": "/vortex-security/static/js/main.40f1c269.js",
     "static/media/about.jpg": "/vortex-security/static/media/about.2fb26adb865af8d8c284.jpg",
     "index.html": "/vortex-security/index.html",
-    "main.a1fcbe6f.css.map": "/vortex-security/static/css/main.a1fcbe6f.css.map",
-    "main.f1a00ffd.js.map": "/vortex-security/static/js/main.f1a00ffd.js.map"
+    "main.e3a647eb.css.map": "/vortex-security/static/css/main.e3a647eb.css.map",
+    "main.40f1c269.js.map": "/vortex-security/static/js/main.40f1c269.js.map"
   },
   "entrypoints": [
-    "static/css/main.a1fcbe6f.css",
-    "static/js/main.f1a00ffd.js"
+    "static/css/main.e3a647eb.css",
+    "static/js/main.40f1c269.js"
   ]
 }
