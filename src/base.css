@@ -131,6 +131,7 @@ textarea {
   background-color: var(--btn-bgcolor);
   color: var(--reverse-font-color);
   font-weight: bold;
+  padding: 0.25rem;
 }
 
 .h2 {
