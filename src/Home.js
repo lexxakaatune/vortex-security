@@ -54,13 +54,13 @@ const Home = () => {
       <main className="main">
         <section className="about">
           <figure className="about__figure">
-            <img src="/img/servicesherobg.100x750.jpg" alt="picture" />
+            <img src="/img/servicesherobg.100x750.jpg" alt="security guard" />
             <figcaption className="about__figcaption">
               <span className="nowrap"><b>25</b></span>
               <small className="nowrap">years of</small>
               <small className="nowrap">experience</small> 
             </figcaption>
-            <img src="/img/servicesherobg.100x750.jpg" alt="picture" />
+            <img src="/img/servicesherobg.100x750.jpg" alt="security guard" />
           </figure>
           <aside className="about__aside">
             <h2 className="h2">ABOUT US</h2>

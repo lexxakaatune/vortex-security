@@ -4,7 +4,7 @@ const About = () => {
     <>
       <section className="about about__hero">
         <figure className="about__figure">
-          <img src="/img/servicesherobg.100x750.jpg" alt="about space" />
+          <img src="/img/servicesherobg.100x750.jpg" alt="security" />
           <figcaption className="about__figcaption">
             <span className="nowrap"><b>25</b></span>
             <small className="nowrap">years of</small>
