@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaShieldAlt, FaMicrochip, FaUserTie, FaHeadset, FaComments} from "react-icons/fa";
+import { Link } from "react-router-dom"
 
 const Home = () => {
   const [image, setImage] = useState({
@@ -186,7 +187,7 @@ const Home = () => {
           </ul>
         </section>
 
-        <section className="contact">
+        <section id="contact" className="contact">
           <div className="contact__div">
             <form action="" className="contact__form">
               <p className="contact__p">
