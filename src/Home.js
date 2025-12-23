@@ -38,7 +38,7 @@ const Home = () => {
           <span className="hero__span nowrap">Trusted Security Solutions</span>
           <h2>VORTEX IS YOUR SAFETY PARTNER</h2>
           <p><strong>VORTEX</strong> Security for unparalleled safety. Our expert team and advanced technology stand as your vigilant partner, ensuring a secure environment. Trust us to safeguard what matters most to you.</p>
-          <a className="btn" href="#contact">More About Us</a>
+          <a className="btn none" href="#contact">Contact Us Now</a>
         </div>
 
         <figure className="hero__figure">
