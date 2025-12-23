@@ -4,13 +4,13 @@ const About = () => {
     <>
       <section className="about about__hero">
         <figure className="about__figure">
-          <img src="/img/servicesherobg.100x750.jpg" alt="picture" />
+          <img src="/img/servicesherobg.100x750.jpg" alt="about space" />
           <figcaption className="about__figcaption">
             <span className="nowrap"><b>25</b></span>
             <small className="nowrap">years of</small>
             <small className="nowrap">experience</small> 
           </figcaption>
-          <img src="/img/servicesherobg.100x750.jpg" alt="picture" />
+          <img src="/img/servicesherobg.100x750.jpg" alt="another" />
         </figure>
         <aside className="about__aside">
           <h2 className="h2">ABOUT US</h2>
@@ -71,7 +71,7 @@ const About = () => {
             </figure>
             <aside className="about__aside">
               <h3>More for our investors to learn</h3>
-              <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <a href="#">Learn More</a></p>
+              <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <a href="About.js">Learn More</a></p>
             </aside>
           </section>
           <section className="about about__section">
@@ -89,7 +89,7 @@ const About = () => {
             </figure>
             <aside className="about__aside">
               <h3>More for our investors to learn</h3>
-              <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <a href="#">Learn More</a></p>
+              <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <a href="About.js">Learn More</a></p>
             </aside>
           </section>
           <section className="about about__section">
