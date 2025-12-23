@@ -37,7 +37,7 @@ const Home = () => {
           <span className="hero__span nowrap">Trusted Security Solutions</span>
           <h2>VORTEX IS YOUR SAFETY PARTNER</h2>
           <p><strong>VORTEX</strong> Security for unparalleled safety. Our expert team and advanced technology stand as your vigilant partner, ensuring a secure environment. Trust us to safeguard what matters most to you.</p>
-          <button className="btn">More About Us</button>
+          <a className="btn" href="#contact">More About Us</a>
         </div>
 
         <figure className="hero__figure">
@@ -84,7 +84,7 @@ const Home = () => {
                 <small>Total Awards</small>
               </li>
             </ul>
-            <a href="#">View More Details</a>
+            <Link to="/about">View More Details</Link>
           </aside>
         </section>
 
@@ -129,42 +129,42 @@ const Home = () => {
 
           <div className="service__div">
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="personal protection" />
               <figcaption className="service__figcaption">
                 <h3>Personal Protection</h3>
                 <small>Ensure safety with our discreet personal protection, delivered by experts.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="commercial security" />
               <figcaption className="service__figcaption">
                 <h3>Commercial Security</h3>
                 <small>Enhance business security with our comprehensive services.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="Object protection" />
               <figcaption className="service__figcaption">
                 <h3>Object Protection</h3>
                 <small>Meticulous protection for your valuable assets.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="security consulting" />
               <figcaption className="service__figcaption">
                 <h3>Security Consulting</h3>
                 <small>Consult with experts for strategic security guidance.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="transport security" />
               <figcaption className="service__figcaption">
                 <h3>Transport Security</h3>
                 <small>Secure transportation assets with efficient logistics.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="image alt" />
+              <img src="/img/about.jpg" alt="cctv monitoring"/>
               <figcaption className="service__figcaption">
                 <h3>CCTV Monitoring</h3>
                 <small>Boost surveillance with <bold>CCTV</bold> for proactive security.</small>

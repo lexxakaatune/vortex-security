@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -77,7 +78,7 @@ const About = () => {
           <section className="about about__section">
             <aside className="about__aside">
               <h3>More for our investors to learn</h3>
-              <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <a href="#">Learn More</a></p> 
+              <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <Link to="/about">Learn More</Link></p> 
             </aside>
             <figure>
                 <img src="/img/bear-bulls__.svg" alt="bear and bulls"/>
@@ -89,13 +90,13 @@ const About = () => {
             </figure>
             <aside className="about__aside">
               <h3>More for our investors to learn</h3>
-              <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <a href="About.js">Learn More</a></p>
+              <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <Link to="/about">Learn More</Link></p>
             </aside>
           </section>
           <section className="about about__section">
             <aside className="about__aside">
               <h3>More for our investors to learn</h3>
-              <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <a>Learn More</a></p>
+              <p>We're redefining what it means to learn about finance and that means education resources that are built for today. <Link to="/about">Learn More</Link></p>
             </aside>
             <figure>
               <img src="/img/robo-hand__.svg" alt="robo hand"/>
