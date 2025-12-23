@@ -55,7 +55,7 @@ export const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <footer className="footer">
-      <figure class="footer__figure">
+      <figure className="footer__figure">
         <img src="logo/vortexlogo.500x200.gif" alt="Vortex Logo" width="500" height="200" title="Vortex Security Concepts" />
       </figure>
       <ol className="footer__ul none">

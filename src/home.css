@@ -254,7 +254,6 @@
 
 .contact__figure {
   background-color: var(--bgcolor);
-  background-image: url(../public/img/about.jpg) ;
   background-size: cover;
   background-position: center;
 }
