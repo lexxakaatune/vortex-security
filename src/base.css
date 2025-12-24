@@ -83,6 +83,10 @@ textarea {
   color: var(--link-active);
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -208,6 +212,14 @@ a:active {
   z-index: 1;
 }
 
+.header div {
+  display: flex;
+}
+
+.header img {
+  width: 60px;
+}
+
 .title {
   color: var(--bgcolor);
   font-size: clamp(1.5rem, 2.2vh, 2rem);
@@ -225,6 +237,7 @@ a:active {
 }
 
 .header__ul {
+  width: 100%;
   padding: var(--padding-tb) var(--padding-side);
   display: flex;
   flex-direction: column;
@@ -234,7 +247,14 @@ a:active {
 
 .header__ul a {
   color: inherit;
+  padding: 0.25rem;
 }
+
+.header__ul a:hover,
+.header__ul a:focus {
+  box-shadow: 0px 0px 2px var(--btn-bgcolor);
+}
+
 
 /* // MAIN */
 .main {

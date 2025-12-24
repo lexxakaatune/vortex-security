@@ -1,26 +1,28 @@
 import { useState } from "react";
 import { FaShieldAlt, FaMicrochip, FaUserTie, FaHeadset, FaComments} from "react-icons/fa";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import {img1, img2, aboutBig, aboutSmall} from "./assets/image";
 
 const Home = () => {
-  const [image, setImage] = useState({
-      imageSrc: '/img/vortexhomepagebg.100x750.jpg',
+  const basePath = (typeof window !== 'undefined' && (window.location.hostname.includes('github.io') || window.location.pathname.startsWith('/vortex'))) ? '/vortex' : '';
+    const [image, setImage] = useState({
+      imageSrc: img1,
       imageAlt: 'Mr.Robert Davis photo',
       name: 'Mr.Robert Davis',
       work: 'Field Supervisor'
     });
   const images = [
     {
-      imageSrc: '/img/vortexhomepagebg.100x750.jpg',
+      imageSrc: img2,
       imageAlt: 'Mr.Robert Davis photo',
-      name: 'Mr.Robert Davis',
-      work: 'Field Supervisor'
-    },
-    {
-      imageSrc: '/img/servicesherobg.100x750.jpg',
-      imageAlt: 'another photo',
       name: 'Mr. another',
       work: 'another Supervisor'
+    },
+    {
+      imageSrc: img1,
+      imageAlt: 'another photo',
+      name: 'Mr.Robert Davis',
+      work: 'Field Supervisor'
     }
   ]
 
@@ -55,13 +57,13 @@ const Home = () => {
       <main className="main">
         <section className="about">
           <figure className="about__figure">
-            <img src="/img/servicesherobg.100x750.jpg" alt="security guard" />
+            <img src={aboutBig} alt="security guard" />
             <figcaption className="about__figcaption">
               <span className="nowrap"><b>25</b></span>
               <small className="nowrap">years of</small>
               <small className="nowrap">experience</small> 
             </figcaption>
-            <img src="/img/servicesherobg.100x750.jpg" alt="security guard" />
+            <img src={aboutSmall} alt="security guard" />
           </figure>
           <aside className="about__aside">
             <h2 className="h2">ABOUT US</h2>
@@ -130,45 +132,45 @@ const Home = () => {
 
           <div className="service__div">
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="personal protection" />
+              <img src={aboutBig} alt="personal protection" />
               <figcaption className="service__figcaption">
                 <h3>Personal Protection</h3>
                 <small>Ensure safety with our discreet personal protection, delivered by experts.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="commercial security" />
+              <img src={aboutBig} alt="commercial security" />
               <figcaption className="service__figcaption">
                 <h3>Commercial Security</h3>
                 <small>Enhance business security with our comprehensive services.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="Object protection" />
+              <img src={aboutBig} alt="Object protection" />
               <figcaption className="service__figcaption">
                 <h3>Object Protection</h3>
                 <small>Meticulous protection for your valuable assets.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="security consulting" />
+              <img src={aboutBig} alt="security consulting" />
               <figcaption className="service__figcaption">
                 <h3>Security Consulting</h3>
                 <small>Consult with experts for strategic security guidance.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="transport security" />
+              <img src={aboutBig} alt="transport security" />
               <figcaption className="service__figcaption">
                 <h3>Transport Security</h3>
                 <small>Secure transportation assets with efficient logistics.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src="/img/about.jpg" alt="cctv monitoring"/>
+              <img src={aboutBig} alt="cctv monitoring"/>
               <figcaption className="service__figcaption">
                 <h3>CCTV Monitoring</h3>
-                <small>Boost surveillance with <bold>CCTV</bold> for proactive security.</small>
+                <small>Boost surveillance with <strong>CCTV</strong> for proactive security.</small>
               </figcaption>
             </figure>
           </div>
@@ -214,7 +216,7 @@ const Home = () => {
             </form>
           </div>
 
-          <figure className="contact__figure" style={{ backgroundImage: 'url(/img/about.jpg)' }}></figure>
+          <figure className="contact__figure"></figure>
         </section>
 
       </main>

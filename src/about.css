@@ -1,11 +1,12 @@
 /* //ABOUT PAGE HERO */
 .about__hero {
   background-color: darkgreen;
-  background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url(../public/img//about.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('./assets/images/about.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   color: #fff;
+  min-height: 50vh;
   padding: 0.5rem;
 }
 
@@ -17,6 +18,7 @@
   overflow: hidden;
   border-radius: 15px;
   background-color: var(--shadow-color);
+  color: var(--reverse-font-color);
   text-align: center;
   width: clamp(200px, 80vw, 300px);
   max-height: 350px;
@@ -32,11 +34,10 @@
   background-color: var(--bgcolor);
 }
 .about__card:nth-child(2) {
-  background-color: var(--highlight);
+  background-color: var(--link-active);
 }
 .about__card:nth-child(3) {
-  background-color: var(--header-color);
-  color: var(reverse-font-color);
+  background-color: var(--fade-bgcolor);
 }
 
 .about__section {

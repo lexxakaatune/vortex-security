@@ -1,10 +1,11 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { vortexLogo } from "./assets/image";
 
 export const Header = () => {
   const [toggle, setToggle] = useState('hide');
 
-  const pages = ['Home', 'About'];
+  const pages = ['Home', 'about'];
 
   const toggleNav = () => {
     const nav = document.querySelector('.header__nav');
@@ -22,22 +23,28 @@ export const Header = () => {
     }
   }
 
+
   return (
     <header className='header'>
-      <h1 className='title nowrap'>Vortex Security</h1>
+      <div>
+        <img src={vortexLogo} alt="vortex logo" />
+        <h1 className='title nowrap'>Vortex Security</h1>
+      </div>
       <nav className="header__nav hide">
         <ul className='header__ul none'>
           {pages.map((page) => {
             if (page === 'Home') {
-              const link = <Link to='/' className="none">
-                <li className="header__li">{page}</li>
-              </Link>
-              return link;
+              return (
+                <Link to='/' key={page} className="none">
+                  <li className="header__li" onClick={toggleNav}>{page}</li>
+                </Link>
+              );
             } else {
-              const link = <Link to={page} className="none">
-                <li className="header__li">{page}</li>
-              </Link>
-              return link;
+              return (
+                <Link to={`/${page}`} key={page} className="none">
+                  <li className="header__li" onClick={toggleNav}>{page}</li>
+                </Link>
+              );
             }
           })}
         </ul>
@@ -56,7 +63,7 @@ export const Footer = () => {
   return (
     <footer className="footer">
       <figure className="footer__figure">
-        <img src="logo/vortexlogo.500x200.gif" alt="Vortex Logo" width="500" height="200" title="Vortex Security Concepts" />
+        <img src={vortexLogo} alt="Vortex Logo" width="500" height="200" title="Vortex Security Concepts" />
       </figure>
       <ol className="footer__ul none">
         <li className="flex-grow">
@@ -66,28 +73,25 @@ export const Footer = () => {
         <li>
           <ul className="none">
             <li><h3 className="footer__h3 nowrap">Useful Links</h3></li>
-            {pages.map((page) => {
-              const link = <li className="footer__li nowrap">{page}</li>
-              return link;
-            })}
+            {pages.map((page) => (
+              <li key={page} className="footer__li nowrap">{page}</li>
+            ))}
           </ul>
         </li>      
         <li>
           <ul className="none">
             <li><h3 className="footer__h3 nowrap">Services</h3></li>
-            {services.map((service) => {
-              const link = <li className="footer__li nowrap">{service}</li>
-              return link;
-            })}
+            {services.map((service) => (
+              <li key={service} className="footer__li nowrap">{service}</li>
+            ))}
           </ul>
         </li>      
         <li>
           <ul className="none">
             <li><h3 className="footer__h3 nowrap">Support</h3></li>
-            {supports.map((support) => {
-              const link = <li className="footer__li nowrap">{support}</li>
-              return link;
-            })}
+            {supports.map((support) => (
+              <li key={support} className="footer__li nowrap">{support}</li>
+            ))}
           </ul>
         </li>      
       </ol>
