@@ -1,14 +1,25 @@
 {
   "files": {
-    "main.css": "/vortex/static/css/main.f6d37d11.css",
-    "main.js": "/vortex/static/js/main.8d49df61.js",
+    "main.css": "/vortex/static/css/main.d4638755.css",
+    "main.js": "/vortex/static/js/main.34140f4a.js",
+    "static/media/vortexlogo.500x200.gif": "/vortex/static/media/vortexlogo.500x200.11614b26fe38b8fd3664.gif",
+    "static/media/Participation_XL__988x1053.png": "/vortex/static/media/Participation_XL__988x1053.07acbd6c187bbd318bc7.png",
+    "static/media/explore__.svg": "/vortex/static/media/explore__.d739802b589fc904dc1231d7072f417b.svg",
+    "static/media/RadicalCustomer_XL__988x1100.png": "/vortex/static/media/RadicalCustomer_XL__988x1100.b36a04c73f8c171f8bcd.png",
+    "static/media/vortexhomepagebg.100x750.jpg": "/vortex/static/media/vortexhomepagebg.100x750.b6fa0eb54408b8978768.jpg",
+    "static/media/bear-bulls__.svg": "/vortex/static/media/bear-bulls__.edba2008a8d8cc725ec6eba91f2548a4.svg",
     "static/media/about.jpg": "/vortex/static/media/about.2fb26adb865af8d8c284.jpg",
+    "static/media/FirstPrinciples_XL__988x970.png": "/vortex/static/media/FirstPrinciples_XL__988x970.84959d13c3413f57ed0e.png",
+    "static/media/servicesherobg.100x750.jpg": "/vortex/static/media/servicesherobg.100x750.1a0d8da44c708c6d895c.jpg",
+    "static/media/SafetyFirst_XL__654x628.png": "/vortex/static/media/SafetyFirst_XL__654x628.84c7c14931d77b922de3.png",
+    "static/media/mecha__.svg": "/vortex/static/media/mecha__.216a338d25e5f278108cb93ef52ec40c.svg",
+    "static/media/robo-hand__.svg": "/vortex/static/media/robo-hand__.e8f66ddede0799ad8c1cee851e9120fb.svg",
     "index.html": "/vortex/index.html",
-    "main.f6d37d11.css.map": "/vortex/static/css/main.f6d37d11.css.map",
-    "main.8d49df61.js.map": "/vortex/static/js/main.8d49df61.js.map"
+    "main.d4638755.css.map": "/vortex/static/css/main.d4638755.css.map",
+    "main.34140f4a.js.map": "/vortex/static/js/main.34140f4a.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6d37d11.css",
-    "static/js/main.8d49df61.js"
+    "static/css/main.d4638755.css",
+    "static/js/main.34140f4a.js"
   ]
 }
