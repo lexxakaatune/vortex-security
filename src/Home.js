@@ -4,13 +4,12 @@ import { Link } from "react-router-dom";
 import {img1, img2, aboutBig, aboutSmall} from "./assets/image";
 
 const Home = () => {
-  const basePath = (typeof window !== 'undefined' && (window.location.hostname.includes('github.io') || window.location.pathname.startsWith('/vortex'))) ? '/vortex' : '';
-    const [image, setImage] = useState({
-      imageSrc: img1,
-      imageAlt: 'Mr.Robert Davis photo',
-      name: 'Mr.Robert Davis',
-      work: 'Field Supervisor'
-    });
+  const [image, setImage] = useState({
+    imageSrc: img1,
+    imageAlt: 'Mr.Robert Davis photo',
+    name: 'Mr.Robert Davis',
+    work: 'Field Supervisor'
+  });
   const images = [
     {
       imageSrc: img2,
