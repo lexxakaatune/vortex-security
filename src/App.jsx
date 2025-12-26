@@ -1,8 +1,8 @@
-import Layout from './Layout';
+import Layout from './pages/Layout';
 import { Routes, Route } from 'react-router-dom';
-import Home from './Home';
-import About from './About';
-import Missing from './Missing';
+import Home from './pages/Home';
+import About from './pages/About';
+import Missing from './pages/Missing';
 
 function App() {
   return (

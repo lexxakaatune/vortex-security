@@ -1,24 +1,25 @@
 import { useState } from "react";
 import { FaShieldAlt, FaMicrochip, FaUserTie, FaHeadset, FaComments} from "react-icons/fa";
 import { Link } from "react-router-dom";
-import {img1, img2, aboutBig, aboutSmall} from "./assets/image";
+import {hero2, hero1, aboutBig, cctv} from "../assets/image";
+import ContactForm from "../components/ContactForm";
 
 const Home = () => {
   const [image, setImage] = useState({
-    imageSrc: img1,
+    imageSrc: hero1,
     imageAlt: 'Mr.Robert Davis photo',
     name: 'Mr.Robert Davis',
     work: 'Field Supervisor'
   });
   const images = [
     {
-      imageSrc: img2,
+      imageSrc: hero2,
       imageAlt: 'Mr.Robert Davis photo',
       name: 'Mr. another',
       work: 'another Supervisor'
     },
     {
-      imageSrc: img1,
+      imageSrc: hero1,
       imageAlt: 'another photo',
       name: 'Mr.Robert Davis',
       work: 'Field Supervisor'
@@ -32,6 +33,8 @@ const Home = () => {
       setImage(images[0])
     }    
   }
+
+  
   return (
     <>
       <section className="hero">
@@ -39,7 +42,7 @@ const Home = () => {
           <span className="hero__span nowrap">Trusted Security Solutions</span>
           <h2>VORTEX IS YOUR SAFETY PARTNER</h2>
           <p><strong>VORTEX</strong> Security for unparalleled safety. Our expert team and advanced technology stand as your vigilant partner, ensuring a secure environment. Trust us to safeguard what matters most to you.</p>
-          <a className="btn none" href="#contact">Contact Us Now</a>
+          <a className="btn none active yes" href="#contact">Contact Us Now</a>
         </div>
 
         <figure className="hero__figure">
@@ -49,7 +52,7 @@ const Home = () => {
               <strong>{image.name}</strong><br/>
               <small>{image.work}</small> 
             </div>
-            <button className="btn" onClick={toggleImg}>&gt;</button>
+            <button className="btn active yes" onClick={toggleImg}>&gt;</button>
           </figcaption>          
         </figure>
       </section>
@@ -62,7 +65,7 @@ const Home = () => {
               <small className="nowrap">years of</small>
               <small className="nowrap">experience</small> 
             </figcaption>
-            <img src={aboutSmall} alt="security guard" />
+            <img src={cctv} alt="security guard" />
           </figure>
           <aside className="about__aside">
             <h2 className="h2">ABOUT US</h2>
@@ -134,7 +137,7 @@ const Home = () => {
               <img src={aboutBig} alt="personal protection" />
               <figcaption className="service__figcaption">
                 <h3>Personal Protection</h3>
-                <small>Ensure safety with our discreet personal protection, delivered by experts.</small>
+                <small>Ensure safety with our discreet personal protection.</small>
               </figcaption>
             </figure>
             <figure className="service__figure">
@@ -166,7 +169,7 @@ const Home = () => {
               </figcaption>
             </figure>
             <figure className="service__figure">
-              <img src={aboutBig} alt="cctv monitoring"/>
+              <img src={cctv} alt="cctv monitoring" width="600" height="400"/>
               <figcaption className="service__figcaption">
                 <h3>CCTV Monitoring</h3>
                 <small>Boost surveillance with <strong>CCTV</strong> for proactive security.</small>
@@ -190,29 +193,7 @@ const Home = () => {
 
         <section id="contact" className="contact">
           <div className="contact__div">
-            <form action="" className="contact__form">
-              <p className="contact__p">
-                <label htmlFor="name">Name</label>
-                <input type="text" id="name" placeholder="Brian Clark" required/>
-              </p>
-              <p className="contact__p">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" placeholder="example@yourgmail.com" required/>
-              </p>
-              <p className="contact__p">
-                <label htmlFor="phone">Phone</label>
-                <input type="tel" id="phone" placeholder="(123) 456 - 7890" required/>
-              </p>
-              <p className="contact__p">
-                <label htmlFor="company">Company</label>
-                <input type="text" id="company" placeholder="BRIX Agency" required/>
-              </p>
-              <p className="contact__p flex-grow">
-                <label htmlFor="msg">Message</label>
-                <textarea id="msg" placeholder="Type your message here..." required/>
-              </p>
-              <button className="btn">Send Message</button>
-            </form>
+            <ContactForm />
           </div>
 
           <figure className="contact__figure"></figure>

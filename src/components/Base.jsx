@@ -1,11 +1,14 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { vortexLogo } from "./assets/image";
+import { Link, useLocation } from "react-router-dom";
+import { vortexLogo } from "../assets/image";
 
 export const Header = () => {
   const [toggle, setToggle] = useState('hide');
-
-  const pages = ['Home', 'about'];
+  const pages = {
+    Home: '/', 
+    About: '/About'
+  };
+  const { pathname } = useLocation();
 
   const toggleNav = () => {
     const nav = document.querySelector('.header__nav');
@@ -23,7 +26,6 @@ export const Header = () => {
     }
   }
 
-
   return (
     <header className='header'>
       <div>
@@ -32,16 +34,16 @@ export const Header = () => {
       </div>
       <nav className="header__nav hide">
         <ul className='header__ul none'>
-          {pages.map((page) => {
+          {Object.entries(pages).map(([page, to]) => {
             if (page === 'Home') {
               return (
-                <Link to='/' key={page} className="none">
+                <Link to='/' key={page} className={pathname === to ? "active yes none" : 'none'}>
                   <li className="header__li" onClick={toggleNav}>{page}</li>
                 </Link>
               );
             } else {
               return (
-                <Link to={`/${page}`} key={page} className="none">
+                <Link to={`/${page}`} key={page} className={pathname === to ? "active yes none" : 'none'}>
                   <li className="header__li" onClick={toggleNav}>{page}</li>
                 </Link>
               );
@@ -49,7 +51,7 @@ export const Header = () => {
           })}
         </ul>
       </nav>
-      <button className="header__btn" onClick={toggleNav}>menu</button>
+      <button className="header__btn active yes" onClick={toggleNav}>menu</button>
     </header>
   )
 }

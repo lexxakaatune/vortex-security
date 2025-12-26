@@ -38,7 +38,7 @@ textarea {
   --reverse-font-color: #fff;
   --header-bgcolor: #fff;
   --hero-bgcolor: #0B033C;
-  --highlight-color: #fff;
+  --highlight: #fff;
   --link-active: #BF4611;
   --link-color: #000;
   --link-hover: hsla(0, 0%, 0%, 0.6);
@@ -78,9 +78,73 @@ textarea {
   }
 }
  */
-/* // UTILITY CLASSES */
-.active {
+ /* // GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bgcolor);
+  font-size: 16px;
+  font-family: var(--ff);
+}
+
+body {
+  background-color: var(--body-bgcolor);
+  color: var(--font-color);
+  min-height: 100vh;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+h1, h2, h3 {
+  font-family: var(--ff-headings);
+  letter-spacing: 0.1em;
+}
+
+h2, h3 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  line-height: 1.5;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+button:hover {
+  border:1px solid var(--btn-bgcolor);
+}
+
+a:any-link {
+  color: var(--link-color);
+}
+
+a:hover, a:focus-visible {
+  color: var(--link-hover);
+}
+
+a:active {
   color: var(--link-active);
+}
+
+/* // UTILITY CLASSES */
+.active.yes {
+  color: var(--link-active);
+  text-shadow: 0px 0px 5px var(--highlight);
+  box-shadow: 0px 0px 5px var(--highlight);
+}
+.active.yes:hover {
+  color: inherit;
+  text-shadow: 0px 0px 5px red;
+  box-shadow: 0px 0px 5px red;
 }
 
 .bold {
@@ -142,74 +206,18 @@ textarea {
   font-size: 0.8rem;
 }
 
-/* // GENERAL STYLES */
-html {
-  scroll-behavior: smooth;
-  background-color: var(--bgcolor);
-  font-size: 16px;
-  font-family: var(--ff);
-}
-
-body {
-  background-color: var(--body-bgcolor);
-  color: var(--font-color);
-  min-height: 100vh;
-}
-
-.App {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
-
-h1, h2, h3 {
-  font-family: var(--ff-headings);
-  letter-spacing: 0.1em;
-}
-
-h2, h3 {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
-
-p {
-  line-height: 1.5;
-}
-
-button {
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
-  padding: 0.5rem;
-}
-
-button:hover {
-  border:1px solid var(--btn-bgcolor);
-}
-
-a:any-link {
-  color: var(--link-color);
-}
-
-a:hover, a:focus-visible {
-  color: var(--link-hover);
-}
-
-a:active {
-  color: var(--link-active);
-}
-
 /* // HEADER */
 .header {
   background-color: var(--header-bgcolor);
   color: var(--font-color);
+  height: 50px;
   padding: var(--padding-tb) var(--padding-side);
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 .header div {
@@ -217,7 +225,7 @@ a:active {
 }
 
 .header img {
-  width: 60px;
+  width: 80px;
 }
 
 .title {
@@ -255,6 +263,9 @@ a:active {
   box-shadow: 0px 0px 2px var(--btn-bgcolor);
 }
 
+.header__btn.active.yes:hover {
+  color: var(--header-bgcolor);
+}
 
 /* // MAIN */
 .main {

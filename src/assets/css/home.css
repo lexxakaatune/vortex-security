@@ -2,18 +2,21 @@
 .hero {
   background-color: var(--hero-bgcolor);
   color: var(--reverse-font-color);
+  height: calc(100vh + 50px);
   padding: 0.25rem;
 }
 
 .hero__div {
-  padding: 1rem;
+  margin: 3rem auto 1.5rem;
 }
 
 .hero__span {
   border-radius: 1rem;
   background-color: var(--fade-bgcolor);
+  box-shadow: 0px 0px 5px var(--highlight);
   text-shadow: 2px 2px 5px var(--link-active);
   letter-spacing: 0.1rem;
+  margin-top: 0.25rem;
   padding: 0.5rem;
   position: absolute;
   top: -100px;
@@ -34,7 +37,7 @@
 
   100% {
     top: 50px;
-    transform: skew(-10deg, -5deg) scaleY(1);
+    transform: skew(-9deg, -4deg) scaleY(1);
   }
 }
 
@@ -42,20 +45,38 @@
   margin-top: 2rem;
 }
 
-.hero__div button {
-  margin-top: 1rem;
+.hero__div p {
   margin-bottom: 1rem;
+}
+
+.hero__figure {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__figure img {
+  height: 100%;
+  flex-grow: 1;
 }
 
 .hero__figcaption {
   border: 1px ridge var(--reverse-font-color);
+  background-color: var(--hero-bgcolor);
   padding: 0.5rem;
   display: flex;
   gap: 1rem;
 }
 
+.hero__figcaption div {
+  width: 50%;
+}
+
 .hero__figcaption button {
   border: 1px ridge var(--link-active);
+  color: inherit;
+  width: 50%;
 }
 
 /* //STATS */
@@ -145,6 +166,7 @@
 }
 .why__fieldset legend {
   font-size: 2rem;
+  margin-left: 1rem;
   padding: 0.25rem;
 }
 
@@ -162,19 +184,27 @@
 
 .service__figure {
   background-color: #eee;
-  width: clamp(200px, 90vw, 300px);
+  width: 300px;
+  height: 200px;
   margin: 1rem auto;
+  display: flex;
   position: relative;
+
+  img {
+    flex-grow: 1;
+  }
 }
 
 .service__figcaption {
   border-left: 5px solid var(--bgcolor);
   background-color: var(--reverse-font-color);
   padding: 0.5rem;
+  height: 100px;
   position: absolute;
   right: 0.5rem;
   bottom: -30px;
   left: 0.5rem;
+  z-index: 5;
 }
 
 /* TRUST SECTION */
@@ -255,7 +285,7 @@
 
 .contact__figure {
   background-color: var(--bgcolor);
-  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url(./assets/images/about.jpg);
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.8)), url('../images/about.jpg');
   background-size: cover;
   background-position: center;
 }

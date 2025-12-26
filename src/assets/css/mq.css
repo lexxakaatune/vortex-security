@@ -23,11 +23,21 @@
 
   /* //HERO SECTION */
   .hero {
+    height: calc(100dvh - 50px);
     display: flex;
   }
 
   .hero__figure {
     min-width: 50%;
+    height: 100%;
+    position: relative;
+  }
+
+  .hero__figcaption {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: -20px;
   }
 
   /* ABOUT US SECTION */
@@ -81,7 +91,7 @@
   }
 
   .service__figure {
-    width: 32%;
+    width: 30%;
   }
 
   /* //TRUST SECTION */

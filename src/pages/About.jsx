@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { aboutBig, aboutSmall, safetyFirst, participation, radicalCustomer, firstPrinciples, explore, bearBull, mecha, roboHand} from './assets/image';
+import { aboutBig, aboutSmall, safetyFirst, participation, radicalCustomer, firstPrinciples, explore, bearBull, mecha, roboHand } from '../assets/image';
 
 const About = () => {
   return (

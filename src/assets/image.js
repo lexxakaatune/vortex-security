@@ -1,5 +1,6 @@
+import hero1 from './images/unknown.3000x40000.jpeg';
+import hero2 from './images/vortexhomepagebg.100x750.jpg';
 import img1 from './images/servicesherobg.100x750.jpg';
-import img2 from './images/vortexhomepagebg.100x750.jpg';
 import aboutSmall from './images/about.jpg';
 import aboutBig from './images/servicesherobg.100x750.jpg';
 import vortexLogo from './logo/vortexlogo.500x200.gif';
@@ -11,7 +12,9 @@ import explore from './images/explore__.svg';
 import bearBull from './images/bear-bulls__.svg';
 import mecha from './images/mecha__.svg';
 import roboHand from './images/robo-hand__.svg';
+import cctv from './images/cctvmon.jpg';
+
 
 export {
-  img1, img2, aboutSmall, aboutBig, vortexLogo, safetyFirst, participation, radicalCustomer, firstPrinciples, explore, bearBull, mecha, roboHand
+  hero1, hero2, img1, aboutSmall, aboutBig, vortexLogo, safetyFirst, participation, radicalCustomer, firstPrinciples, explore, bearBull, mecha, roboHand, cctv
 };
