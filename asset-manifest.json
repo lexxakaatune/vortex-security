@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/vortex-security/static/css/main.d8fc9ec2.css",
-    "main.js": "/vortex-security/static/js/main.61f4d580.js",
+    "main.css": "/vortex-security/static/css/main.fabef4de.css",
+    "main.js": "/vortex-security/static/js/main.e42b50c9.js",
     "static/media/vortexlogo.500x200.gif": "/vortex-security/static/media/vortexlogo.500x200.11614b26fe38b8fd3664.gif",
     "static/media/Participation_XL__988x1053.png": "/vortex-security/static/media/Participation_XL__988x1053.07acbd6c187bbd318bc7.png",
     "static/media/explore__.svg": "/vortex-security/static/media/explore__.d739802b589fc904dc1231d7072f417b.svg",
@@ -12,14 +12,16 @@
     "static/media/FirstPrinciples_XL__988x970.png": "/vortex-security/static/media/FirstPrinciples_XL__988x970.84959d13c3413f57ed0e.png",
     "static/media/servicesherobg.100x750.jpg": "/vortex-security/static/media/servicesherobg.100x750.1a0d8da44c708c6d895c.jpg",
     "static/media/SafetyFirst_XL__654x628.png": "/vortex-security/static/media/SafetyFirst_XL__654x628.84c7c14931d77b922de3.png",
+    "static/media/cctvmon.jpg": "/vortex-security/static/media/cctvmon.b368b00b4d0912ac09c5.jpg",
     "static/media/mecha__.svg": "/vortex-security/static/media/mecha__.216a338d25e5f278108cb93ef52ec40c.svg",
     "static/media/robo-hand__.svg": "/vortex-security/static/media/robo-hand__.e8f66ddede0799ad8c1cee851e9120fb.svg",
+    "static/media/unknown.3000x40000.jpeg": "/vortex-security/static/media/unknown.3000x40000.3b868034fc807d5fd66a.jpeg",
     "index.html": "/vortex-security/index.html",
-    "main.d8fc9ec2.css.map": "/vortex-security/static/css/main.d8fc9ec2.css.map",
-    "main.61f4d580.js.map": "/vortex-security/static/js/main.61f4d580.js.map"
+    "main.fabef4de.css.map": "/vortex-security/static/css/main.fabef4de.css.map",
+    "main.e42b50c9.js.map": "/vortex-security/static/js/main.e42b50c9.js.map"
   },
   "entrypoints": [
-    "static/css/main.d8fc9ec2.css",
-    "static/js/main.61f4d580.js"
+    "static/css/main.fabef4de.css",
+    "static/js/main.e42b50c9.js"
   ]
 }
