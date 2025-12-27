@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { vortexLogo } from "../assets/image";
+import { Socials } from "./ContactForm"
 
 export const Header = () => {
   const [toggle, setToggle] = useState('hide');
   const pages = {
     Home: '/', 
+    Contact: '/Contact',
     About: '/About'
   };
   const { pathname } = useLocation();
@@ -28,7 +30,7 @@ export const Header = () => {
 
   return (
     <header className='header'>
-      <div>
+      <div className="headerDiv">
         <img src={vortexLogo} alt="vortex logo" />
         <h1 className='title nowrap'>Vortex Security</h1>
       </div>
@@ -71,6 +73,7 @@ export const Footer = () => {
         <li className="flex-grow">
           <h2 className="footer__h2 nowrap">Vortex Security</h2>
           <p className="footer__p">We boost a team of skilled and qualified professionals ready to install a robust security system, safeguarding your premises and ensuring. <br /> Experts install advanced security systems with the latest technology.</p>
+          <Socials />
         </li>
         <li>
           <ul className="none">

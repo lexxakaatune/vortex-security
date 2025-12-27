@@ -2,7 +2,7 @@ import { useState } from "react";
 import { FaShieldAlt, FaMicrochip, FaUserTie, FaHeadset, FaComments} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import {hero2, hero1, aboutBig, cctv} from "../assets/image";
-import ContactForm from "../components/ContactForm";
+import {ContactForm} from "../components/ContactForm";
 
 const Home = () => {
   const [image, setImage] = useState({
@@ -192,8 +192,8 @@ const Home = () => {
         </section>
 
         <section id="contact" className="contact">
-          <div className="contact__div">
-            <ContactForm />
+          <div className="home contact__div">
+            <ContactForm position='true' />
           </div>
 
           <figure className="contact__figure"></figure>

@@ -5,10 +5,15 @@
   }
 
   /* header section */
+  .title {
+    font-size: 1.5rem;
+  }
+  
   .header__nav {
     background-color: transparent;
     color: var(--font-color);
     width: max-content;
+    height: fit-content;
     display: flex;    
     position: static;
   }
@@ -110,7 +115,7 @@
     min-width: 50%;
   }
 
-  .contact__form {
+  .home.contact__form {
     top: auto;
     right: -20%;
   }
