@@ -1,7 +1,7 @@
 {
   "name": "vortex",
   "version": "0.1.0",
-  "homepage": "https://lexxakaatune.github.io/",
+  "homepage": "https://lexxakaatune.github.io/vortex-security",
   "private": true,
   "dependencies": {
     "react": "^19.2.3",
