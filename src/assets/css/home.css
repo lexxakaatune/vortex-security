@@ -3,7 +3,7 @@
   border-radius: 5px;
   background-color: var(--hero-bgcolor);
   color: var(--reverse-font-color);
-  min-height: 100vh ;
+  min-height: calc(100dvh - 50px) ;
   margin: 0.15rem;
   padding: 0.25rem;
 }
